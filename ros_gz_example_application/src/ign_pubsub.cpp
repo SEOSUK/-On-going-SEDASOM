@@ -47,9 +47,9 @@ class ign_pubsub : public rclcpp::Node
   private:
 	    void timer_callback()
 	    {	//main loop, 100Hz
-		set_command();
-		data_publish();     
-		PID_controller();		
+		set_traj();       // set desired values
+		PID_controller(); // calc control value	
+  	        data_publish();   // pub sub
 	    }
 
 	void PID_controller()
