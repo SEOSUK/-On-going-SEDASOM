@@ -212,6 +212,10 @@ void set_traj()
     body_rpy_cmd[2] = body_rpy_cmd.z();
 
 
+    joint_angle_cmd[0] = 0;
+    joint_angle_cmd[1] = 0;
+
+
 }
 
 
